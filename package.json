@@ -1,0 +1,49 @@
+{
+  "name": "chrome-in-vscode",
+  "displayName": "Chrome in VS Code",
+  "version": "0.0.1",
+  "description": "Sample extension to open Chrome with agent integration",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.2.2"
+  },
+  "activationEvents": [
+    "onCommand:codingAgent.openChrome"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "codingAgent.openChrome",
+        "title": "Open Chrome"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Coding Agent",
+      "properties": {
+        "codingAgent.chromePath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to Chrome executable"
+        },
+        "codingAgent.agentUrl": {
+          "type": "string",
+          "default": "",
+          "description": "Coding agent URL"
+        }
+      }
+    }
+  }
+}
