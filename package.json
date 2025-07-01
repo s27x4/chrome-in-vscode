@@ -1,0 +1,26 @@
+{
+  "name": "chrome-in-vscode",
+  "displayName": "Chrome in VSCode",
+  "publisher": "codingagent",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:chrome-in-vscode.launchChrome"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "chrome-in-vscode.launchChrome",
+        "title": "Launch Chrome"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo 'No tests'"
+  },
+  "devDependencies": {
+  }
+}
