@@ -1,0 +1,29 @@
+{
+  "name": "chrome-in-vscode",
+  "displayName": "Chrome in VSCode",
+  "description": "Open Chrome within VSCode",
+  "version": "0.0.1",
+  "publisher": "example",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.openUrl"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.openUrl",
+        "title": "Open URL in Chrome"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "@types/vscode": "^1.85.0"
+  }
+}
