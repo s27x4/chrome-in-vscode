@@ -1,0 +1,25 @@
+{
+  "name": "chrome-in-vscode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -p ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "activationEvents": [
+    "onCommand:chrome-in-vscode.helloWorld"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "chrome-in-vscode.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  }
+}
