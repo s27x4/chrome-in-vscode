@@ -1,0 +1,26 @@
+{
+  "name": "chrome-in-vscode",
+  "version": "0.0.1",
+  "description": "A minimal extension.",
+  "publisher": "yourpublisher",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Chrome in VSCode",
+      "properties": {
+        "codingAgent.chromePath": {
+          "type": "string",
+          "description": "Windows 用 chrome.exe のフルパスを入力",
+          "scope": "machine"
+        },
+        "codingAgent.agentUrl": {
+          "type": "string",
+          "description": "既定 URL",
+          "scope": "machine"
+        }
+      }
+    }
+  }
+}
